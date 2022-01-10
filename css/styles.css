@@ -82,6 +82,11 @@
     font-family: "Poppins";
 }
 
+.ff-poppins-600 {
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
 
 .gradient-text {
     background: linear-gradient(to right, #3288FF, #3DCEEE, #5837DB, #3288FF);
@@ -185,4 +190,8 @@
 
 .text-gray-2 {
     color: #666482;
+}
+
+.bg-black  {
+    background-color: black;
 }
