@@ -1,5 +1,5 @@
 // baseUrl = "http://localhost:4200/"
-baseUrl = "https://app.portalx667cc.com/"
+baseUrl = "https://app.dataset.at/"
 
 
 document.querySelector('.second-button').addEventListener('click', function () {
@@ -9,6 +9,13 @@ document.querySelector('.second-button').addEventListener('click', function () {
 
 document.querySelector('.claim-button').addEventListener('click', function () {
     var username = document.getElementById("username").value;
+    if(username.length > 3){
+        window.open(baseUrl + 'auth/signup?username=' + username, '_blank');
+    }
+});
+
+document.querySelector('.footer-claim-button').addEventListener('click', function () {
+    var username = document.getElementById("username2").value;
     if(username.length > 3){
         window.open(baseUrl + 'auth/signup?username=' + username, '_blank');
     }
