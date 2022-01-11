@@ -1,5 +1,5 @@
 // baseUrl = "http://localhost:4200/"
-baseUrl = "https://app.portalx667cc.com/"
+baseUrl = "https://http://dataset.at/"
 
 
 document.querySelector('.second-button').addEventListener('click', function () {
@@ -17,4 +17,3 @@ document.querySelector('.claim-button').addEventListener('click', function () {
 document.querySelector('.early-access-button').addEventListener('click', function () {
     window.open(baseUrl + 'auth/signup', '_blank');
 });
-
