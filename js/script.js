@@ -24,4 +24,3 @@ document.querySelector('.footer-claim-button').addEventListener('click', functio
 document.querySelector('.early-access-button').addEventListener('click', function () {
     window.open(baseUrl + 'auth/signup', '_blank');
 });
-
