@@ -206,6 +206,7 @@
 .footer {
     padding: 5rem 5rem 0rem 5rem;
     color: #666482;
+    text-align: center;
 }
 
 .hr-line {
@@ -215,7 +216,7 @@
 
 .facebook-icon {
     width: 12px;
-    margin: 2.5rem;
+    margin: 1rem;
 }
 
 .linkedin-icon {
@@ -230,4 +231,9 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.terms-privacy {
+    display: flex;
+    gap: 2rem;
 }
