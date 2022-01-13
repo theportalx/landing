@@ -87,6 +87,10 @@
     font-family: "Poppins";
 }
 
+* {
+    font-family: "Poppins";
+}
+
 
 .gradient-text {
     background: linear-gradient(to right, #3288FF, #3DCEEE, #5837DB, #3288FF);
@@ -96,18 +100,63 @@
     -moz-text-fill-color: transparent;
 }
 
-@media (min-width: 1200px) {
-    .fs-0 {
-        font-size: 5rem;
+/* @media (min-width: 1200px) {
+    .bg-1 {
+        background: url("../assets/bg-1.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 70vh;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+    .bg-1 {
+        background: url("../assets/bg-1.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 30vh !important;
     }
 }
 
-.fs-0 {
-    font-size: calc(2.5rem + 2vw) !important;
+.bg-1 {
+    background: url("../assets/bg-1.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
 }
 
-.fs-7 {
+.fs-14 {
     font-size: 0.875rem;
+}
+
+.fs-26 {
+    font-size: 1.625rem;
+}
+
+.fs-80 {
+    /* font-size: 5rem; */
+    font-size: calc(2.5rem + 2vw) !important;
+
+}
+
+.fs-60 {
+    /* font-size: 3.75rem; */
+    font-size: calc(1.5rem + 2vw) !important;
+}
+
+.sm-icon {
+    width: 28px;
+}
+
+.lg-icon {
+    width: 60px;
+}
+
+.xl-icon {
+    height: 120px;
 }
 
 .w-40 {
@@ -121,6 +170,10 @@
     max-width: 400px;
     min-width: 150px;
     height: 55px;
+}
+
+.main-btn:hover {
+    background: #1775fa !important;
 }
 
 .input-group {
@@ -155,19 +208,14 @@
     }
 }
 
-.bg-1 {
-    background: url("../assets/bg-1.svg");
-    background-size: contain;
-    background-position: center;
-}
 
 .img-1 {
-    width: 50vw;
+    width: 45vw;
 }
 
 .img-2 {
     margin-left: -20vw;
-    width: 25vw;
+    width: 22.5vw;
 }
 
 .bg-3 {
@@ -194,6 +242,36 @@
 
 .bg-black  {
     background-color: black;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+
+.section .sub-section {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+
+.section-2 .sub-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
 }
 
 .grad-img {
@@ -237,3 +315,95 @@
     display: flex;
     gap: 2rem;
 }
+
+.h-80 {
+    height: 80vh;
+}
+
+
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    padding: 3rem 0rem;
+}
+
+.section-3 .card-lg {
+    width: 350px;
+    border: 1px solid #E6E6EB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.section-3 .header {
+    display: flex;
+    flex-direction: column;
+    background: #3288FF;
+    border-radius: 4px;
+    margin: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.section-3 .content {
+    margin: 1rem;
+    font-weight: 500;
+}
+
+.section-3 .btn {
+    border: 1px solid #3288FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    color: #3288FF;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.section-3 .btn:hover {
+    background-color: #3288FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.lg-btn {
+    background-color: #3288FF;
+    border: 1px solid #3288FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin: 1rem;
+    width: 300px;
+}
+
+.lg-btn:hover {
+    background-color: #1775fa;
+    border: 1px solid #1775fa;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin: 1rem;
+    width: 300px;
+}
+
