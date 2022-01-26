@@ -102,7 +102,7 @@
 
 /* @media (min-width: 1200px) {
     .bg-1 {
-        background: url("../assets/bg-1.svg");
+        background: url("../assets/data-catalog-bg.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 800px) {
     .bg-1 {
-        background: url("../assets/bg-1.svg");
+        background: url("../assets/data-catalog-bg.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -121,7 +121,7 @@
 }
 
 .bg-1 {
-    background: url("../assets/bg-1.svg");
+    background: url("../assets/data-catalog-bg.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -216,12 +216,6 @@
 .img-2 {
     margin-left: -20vw;
     width: 22.5vw;
-}
-
-.bg-3 {
-    background: url("../assets/bg-3.svg");
-    background-size: cover;
-    background-position: center;
 }
 
 .img-3 {
