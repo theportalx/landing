@@ -1,348 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Dataset</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@100,300,600,800;1,300&display=swap">
-    <link rel="icon" type="image/svg" href="assets/logo-black.svg" sizes="196x196" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@100,300,600,800;1,300&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="assets/logo-black.svg"
+      sizes="196x196"
+    />
+  </head>
 
-<body class="vw-100 overflow-x-hidden">
+  <body class="vw-100 overflow-x-hidden">
     <div class="bg-black text-white py-3">
-        <div class="mx-5 pb-5 mb-5">
-            <div class="d-flex justify-content-between pt-3 pb-5">
-                <div class="d-flex align-items-center align-self-center ms-2 fw-bold">
-                    <img src="assets/logo.svg" alt="" width="20" height="20">
-                    <div class="ms-2">Dataset</div>
+      <div class="mx-5 pb-5 mb-5">
+        <div class="d-flex justify-content-between pt-3 pb-5">
+          <div class="d-flex align-items-center align-self-center ms-2 fw-bold">
+            <img src="assets/logo.svg" alt="" width="20" height="20" />
+            <div class="ms-2">Dataset</div>
+          </div>
+          <div class="d-flex align-items-center">
+            <button
+              type="button"
+              class="btn btn-primary d-xs-none d-sm-none d-md-inline-block me-5 main-btn ff-poppins early-access-button"
+            >
+              Get early access
+            </button>
+            <section class="d-flex flex-column align-items-end">
+              <nav class="navbar navbar-dark bg-black">
+                <div class="container-fluid">
+                  <button
+                    class="navbar-toggler second-button"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarToggleExternalContent10"
+                    aria-controls="navbarToggleExternalContent10"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <div class="animated-icon">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </button>
                 </div>
-                <div class="d-flex align-items-center">
-                    <button type="button"
-                        class="btn btn-primary d-xs-none d-sm-none d-md-inline-block me-5 main-btn ff-poppins early-access-button">
-                        Get early access</button>
-                    <section class="d-flex flex-column align-items-end">
-                        <nav class="navbar navbar-dark bg-black">
-                            <div class="container-fluid">
-                                <button class="navbar-toggler second-button" type="button" data-mdb-toggle="collapse"
-                                    data-mdb-target="#navbarToggleExternalContent10"
-                                    aria-controls="navbarToggleExternalContent10" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <div class="animated-icon"><span></span><span></span><span></span><span></span>
-                                    </div>
-                                </button>
-                            </div>
-                        </nav>
-                        <!-- <div class="collapse" id="navbarToggleExternalContent10">
+              </nav>
+              <!-- <div class="collapse" id="navbarToggleExternalContent10">
                             <div class="shadow-3 py-3 pr-3">
                                 <button class="btn btn-dark btn-block m-0">Home</button>
                                 <button class="btn btn-dark btn-block m-0">Profile</button>
                                 <button class="btn btn-dark btn-block m-0">Settings</button>
                             </div>
                         </div> -->
-                    </section>
-                </div>
-            </div>
-            <div class="py-4">
-            </div>
-            <div class="d-flex flex-column align-items-center mt-5">
-                <p class="fs-80 ff-poppins-bold fw-bold text-center">
-                    All-in-one workspace <br> for <span class="gradient-text">data teams</span>
-                </p>
-                <div class="d-flex w-40 align-items-center flex-sm-wrap flex-xs-wrap flex-md-nowrap justify-content-center">
-                    <div class="d-flex flex-nowrap input-group mt-3 me-3">
-                        <span class="input-group-text border-0 bg-black ff-poppins text-white"
-                            id="datasetat">dataset.at/</span>
-                        <input type="text" class="form-control border-0 input-box bg-black text-white" id="username"
-                            aria-describedby="datasetat">
-                    </div>
-                    <button type="button"
-                        class="mt-3 btn btn-primary main-btn ff-poppins flex-grow-1 claim-button">Claim</button>
-                </div>
-                <p class="ff-poppins my-5 text-center">
-                    Grab your username and join the waitlist to get early access.
-                </p>
-            </div>
+            </section>
+          </div>
         </div>
-        <div class="mt-5 py-5 px-4 d-flex flex-column align-items-center text-center">
-            <div class="pb-1 ff-poppins fs-14 border-bottom border-white border-1 text-gray-1">
-                Data Catalog
+
+        <div class="py-4"></div>
+        <div class="d-flex flex-column align-items-center mt-5">
+          <p class="fs-80 ff-poppins-bold fw-bold text-center">
+            The front page of your <br /><span class="word"></span>
+            <span class="gradient-text">datasets</span>
+          </p>
+          <p class="fs-26 ff-poppins text-center">
+            Discover, Collaborate & operate on data, with ease
+          </p>
+
+          <div
+            class="d-flex w-40 align-items-center flex-sm-wrap flex-xs-wrap flex-md-nowrap justify-content-center"
+          >
+            <div class="d-flex flex-nowrap input-group mt-3 me-3">
+              <span
+                class="input-group-text border-0 bg-black ff-poppins text-white"
+                id="datasetat"
+                >dataset.at/</span
+              >
+              <input
+                type="text"
+                class="form-control border-0 input-box bg-black text-white"
+                id="username"
+                aria-describedby="datasetat"
+              />
             </div>
-            <div class="fs-1 ff-poppins-600 mt-5 text-center">
-                Discover all your data in one place
-            </div>
-            <div class="ff-poppins mt-4 text-center text-gray-1">
-                With Dataset.at, intelligently organize, pin, share,
-                and collaborate on all kinds of datasets with your team and beyond
-            </div>
+            <button
+              type="button"
+              class="mt-3 btn btn-primary main-btn ff-poppins flex-grow-1 claim-button"
+            >
+              Claim
+            </button>
+          </div>
+          <p class="ff-poppins my-5 text-center">
+            Grab your username and join the waitlist to get early access.
+          </p>
         </div>
-        <div class="mb-4 bg-1 d-flex justify-content-center align-items-center">
-            <img src="assets/data-catalog-1.png" class="img-1">
-            <img src="assets/data-catalog-2.png" class="img-2">
+      </div>
+      <div
+        class="mt-5 py-5 px-4 d-flex flex-column align-items-center text-center"
+      >
+        <div
+          class="pb-1 ff-poppins fs-14 border-bottom border-white border-1 text-gray-1"
+        >
+          Discovery
         </div>
+        <div class="fs-1 ff-poppins-600 mt-5 text-center">
+          Designed to improve your productivity
+        </div>
+        <div class="ff-poppins mt-4 text-center text-gray-1">
+          With Dataset.at you can find, understand and access the trustworthy
+          data you are looking for,<br />
+          without having to jump on endless data exploration sprints.
+        </div>
+      </div>
+      <div class="mb-4 bg-1 d-flex justify-content-center align-items-center">
+        <img src="assets/data-catalog-1.png" class="img-1" />
+        <img src="assets/data-catalog-2.png" class="img-2" />
+      </div>
     </div>
 
     <div class="bg-white text-dark py-3">
-        <div class="py-5 px-4 d-flex flex-column align-items-center text-center">
-            <div class="pb-1 ff-poppins fs-14 border-bottom border-dark border-1 text-gray-2">
-                Data Ramp
-            </div>
-            <div class="fs-1 ff-poppins-600 mt-5 text-center">
-                Bring all your data by Pin, Syncs, Schema <br>
-                or Uploads
-            </div>
-            <div class="ff-poppins mt-4 text-center text-gray-2">
-                Dataset.at supports 300+ data sources, and with our powerful OPTUM engine to map across 4500+ <br>
-                infotypes and sorted by similarity to help you find the right and trusted data really fast.
-            </div>
+      <div class="py-5 px-4 d-flex flex-column align-items-center text-center">
+        <div
+          class="pb-1 ff-poppins fs-14 border-bottom border-dark border-1 text-gray-2"
+        >
+          Data Ramp
         </div>
-        <div class="d-flex justify-content-center align-items-center ">
-            <img src="assets/data-ramp.svg" class="img-3 rounded my-5">
+        <div class="fs-1 ff-poppins-600 mt-5 text-center">
+          Bring all your data by Pin, Syncs, Schema <br />
+          or Uploads
         </div>
+        <div class="ff-poppins mt-4 text-center text-gray-2">
+          Dataset.at supports 300+ data sources, and with our powerful OPTUM
+          engine to map across 4500+ <br />
+          infotypes and sorted by similarity to help you find the right and
+          trusted data really fast.
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <img src="assets/data-ramp.svg" class="img-3 rounded my-5" />
+      </div>
     </div>
 
     <div class="bg-black">
-        <div class="mt-5 py-5 px-4 d-flex flex-column align-items-center text-center">
-            <div class="pb-1 ff-poppins fs-14 border-bottom border-white border-1 text-gray-1">
-                Data Workspace
-            </div>
-            
-            <div class="fs-1 ff-poppins-600 mt-5 text-center text-white">
-                The most powerful and flexible data workspace <br> for any type of projects or tasks
-            </div>
-            <div class="ff-poppins mt-4 text-center text-gray-1">
-                For data projects, sharing with teams, cleaning or anything
-            </div>
+      <div
+        class="mt-5 py-5 px-4 d-flex flex-column align-items-center text-center"
+      >
+        <div
+          class="pb-1 ff-poppins fs-14 border-bottom border-white border-1 text-gray-1"
+        >
+          Data Workspace
         </div>
 
+        <div class="fs-1 ff-poppins-600 mt-5 text-center text-white">
+          The most powerful and flexible data workspace <br />
+          for any type of projects or tasks
+        </div>
+        <div class="ff-poppins mt-4 text-center text-gray-1">
+          For data projects, sharing with teams, cleaning or anything
+        </div>
+      </div>
 
-        <div class="container pb-4">
-            <div class="box">
-                <img src="assets/data-workspace-1.png" class="img-1">
-            </div>
-            <div class="box">
-                <img src="assets/data-workspace-2.png" class="img-1">
-            </div>
-            <div class="box">
-                <img src="assets/data-workspace-3.png" class="img-1">
-            </div>
-            <div class="box">
-                <img src="assets/data-workspace-4.png" class="img-1">
-            </div>
-            <div class="box">
-                <img src="assets/data-workspace-5.png" class="img-1">
-            </div>
-            <div class="box">
-                <img src="assets/data-workspace-6.png" class="img-1">
-            </div>
+      <div class="container pb-4">
+        <div class="box">
+          <img src="assets/data-workspace-1.png" class="img-1" />
+        </div>
+        <div class="box">
+          <img src="assets/data-workspace-2.png" class="img-1" />
+        </div>
+        <div class="box">
+          <img src="assets/data-workspace-3.png" class="img-1" />
+        </div>
+        <div class="box">
+          <img src="assets/data-workspace-4.png" class="img-1" />
+        </div>
+        <div class="box">
+          <img src="assets/data-workspace-5.png" class="img-1" />
+        </div>
+        <div class="box">
+          <img src="assets/data-workspace-6.png" class="img-1" />
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="sub-section">
+          <div class="d-flex align-items-center mb-3">
+            <img class="sm-icon me-4" src="assets/collection.png" />
+            <span class="fs-26 ff-poppins text-white">Collection</span>
+          </div>
+          <div class="text-gray-1">
+            Curate datasets around a project or anything to share
+          </div>
         </div>
 
-
-
-        <div class="section">
-            <div class="sub-section">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="sm-icon me-4" src="assets/collection.png">
-                    <span class="fs-26 ff-poppins text-white">Collection</span>
-                </div>
-                <div class="text-gray-1"> 
-                    Curate datasets around a project or anything to share
-                </div>
-            </div>
-
-            <div class="sub-section">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="sm-icon me-4" src="assets/workbench.png">
-                    <span class="fs-26 ff-poppins text-white">Workbench</span>
-                </div>
-                <div class="text-gray-1"> 
-                    Transform datasets to get them ready with our 100+ Apps
-                </div>
-            </div>
-
-            <div class="sub-section">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="sm-icon me-4" src="assets/clean-room.png">
-                    <span class="fs-26 ff-poppins text-white">Clean Room</span>
-                </div>
-                <div class="text-gray-1"> 
-                    Share datasets internal or externally
-                </div>
-            </div>
-
-            <div class="sub-section">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="sm-icon me-4" src="assets/data-prep.png">
-                    <span class="fs-26 ff-poppins text-white">Data Prep</span>
-                </div>
-                <div class="text-gray-1"> 
-                    Collaborate to prepare data ready
-                </div>
-            </div>
-
-            <div class="sub-section">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="sm-icon me-4" src="assets/private-mode.png">
-                    <span class="fs-26 ff-poppins text-white">Private Mode</span>
-                </div>
-                <div class="text-gray-1"> 
-                    Curate datasets which you frequently use
-                </div>
-            </div>
-
-            <div class="sub-section">
-                <div class="d-flex align-items-center mb-3">
-                    <img class="sm-icon me-4" src="assets/or-anything.png">
-                    <span class="fs-26 ff-poppins text-white">Or Anything</span>
-                </div>
-                <div class="text-gray-1"> 
-                    Use workspaces with all the features built-in
-                </div>
-            </div>
-
+        <div class="sub-section">
+          <div class="d-flex align-items-center mb-3">
+            <img class="sm-icon me-4" src="assets/workbench.png" />
+            <span class="fs-26 ff-poppins text-white">Workbench</span>
+          </div>
+          <div class="text-gray-1">
+            Transform datasets to get them ready with our 100+ Apps
+          </div>
         </div>
-    </div>  
+
+        <div class="sub-section">
+          <div class="d-flex align-items-center mb-3">
+            <img class="sm-icon me-4" src="assets/clean-room.png" />
+            <span class="fs-26 ff-poppins text-white">Clean Room</span>
+          </div>
+          <div class="text-gray-1">Share datasets internal or externally</div>
+        </div>
+
+        <div class="sub-section">
+          <div class="d-flex align-items-center mb-3">
+            <img class="sm-icon me-4" src="assets/data-prep.png" />
+            <span class="fs-26 ff-poppins text-white">Data Prep</span>
+          </div>
+          <div class="text-gray-1">Collaborate to prepare data ready</div>
+        </div>
+
+        <div class="sub-section">
+          <div class="d-flex align-items-center mb-3">
+            <img class="sm-icon me-4" src="assets/private-mode.png" />
+            <span class="fs-26 ff-poppins text-white">Private Mode</span>
+          </div>
+          <div class="text-gray-1">
+            Curate datasets which you frequently use
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="d-flex align-items-center mb-3">
+            <img class="sm-icon me-4" src="assets/or-anything.png" />
+            <span class="fs-26 ff-poppins text-white">Or Anything</span>
+          </div>
+          <div class="text-gray-1">
+            Use workspaces with all the features built-in
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="bg-white text-dark py-3">
-        <div class="py-5 px-4 d-flex flex-column align-items-center text-center">
-            <div class="fs-1 ff-poppins-600 mt-3 text-center">
-                But that’s not all
-            </div>
-            <div class="ff-poppins mt-4 text-center text-gray-2">
-                Dataset.at is packed with features that help you save time, get data project moving blazing fast.
-            </div>
+      <div class="py-5 px-4 d-flex flex-column align-items-center text-center">
+        <div class="fs-1 ff-poppins-600 mt-3 text-center">
+          But that’s not all
         </div>
-        
-        <div class="section-2">
-            <div class="sub-section">
-                <img class="lg-icon mb-4" src="assets/shareable-link.png">
-                <span>Sharable unique link for all your datasets</span>
-            </div>
-            <div class="sub-section">
-                <img class="lg-icon mb-4" src="assets/automated-tags.png">
-                <span>Automated tags & powerful search</span>
-            </div>
-            <div class="sub-section">
-                <img class="lg-icon mb-4" src="assets/privacy-feature.png">
-                <span>Privacy features built-in </span>
-            </div>
-            <div class="sub-section">
-                <img class="lg-icon mb-4" src="assets/automated-data-quality.png">
-                <span>Automated Data Quality, Privacy & Utility Score</span>
-            </div>
+        <div class="ff-poppins mt-4 text-center text-gray-2">
+          Dataset.at is packed with features that help you save time, get data
+          project moving blazing fast.
         </div>
+      </div>
 
-        <div class="fs-1 ff-poppins-600 mt-5 text-center px-3">
-            How will you use Dataset.at ?
+      <div class="section-2">
+        <div class="sub-section">
+          <img class="lg-icon mb-4" src="assets/shareable-link.png" />
+          <span>Sharable unique link for all your datasets</span>
         </div>
+        <div class="sub-section">
+          <img class="lg-icon mb-4" src="assets/automated-tags.png" />
+          <span>Automated tags & powerful search</span>
+        </div>
+        <div class="sub-section">
+          <img class="lg-icon mb-4" src="assets/privacy-feature.png" />
+          <span>Privacy features built-in </span>
+        </div>
+        <div class="sub-section">
+          <img class="lg-icon mb-4" src="assets/automated-data-quality.png" />
+          <span>Automated Data Quality, Privacy & Utility Score</span>
+        </div>
+      </div>
 
-        <div class="section-3">
+      <div class="fs-1 ff-poppins-600 mt-5 text-center px-3">
+        How will you use Dataset.at ?
+      </div>
 
-            <div class="card-lg">
-                <div>
-                    <div class="header">
-                        <span class="text-white fs-26 mt-5 mb-4 px-2">Team Edition</span>
-                        <img class="xl-icon mt-3 mb-5" src="assets/team-edition.png">
-                    </div>
-                    <div class="content">
-                        Spin up virtual workspaces and collaborate effortlessly 
-                        with team members around any type of data projects 
-                        with chat, documentation & more built in.
-                    </div>
-                </div>
-                <button class="btn">
-                    Early access
-                </button>
+      <div class="section-3">
+        <div class="card-lg">
+          <div>
+            <div class="header">
+              <span class="text-white fs-26 mt-5 mb-4 px-2">Team Edition</span>
+              <img class="xl-icon mt-3 mb-5" src="assets/team-edition.png" />
             </div>
-
-            <div class="card-lg">
-                <div>
-                    <div class="header">
-                        <span class="text-white fs-26 mt-5 mb-4 px-2">Enterprise edition</span>
-                        <img class="xl-icon mt-3 mb-5" src="assets/enterprise-edition.png">
-                    </div>
-                    <div class="content">
-                        Create sample stores and central data repositories to help everyone find and access the data they need. 
-                        Use all of your organization’s data without having to worry about data quality, compliance, or data governance ever again.
-                    </div>
-                </div>
-                <div class="btn">
-                    Early access
-                </div>
+            <div class="content">
+              Spin up virtual workspaces and collaborate effortlessly with team
+              members around any type of data projects with chat, documentation
+              & more built in.
             </div>
-
-            <div class="card-lg">
-                <div>
-                    <div class="header">
-                        <span class="text-white fs-26 mt-5 mb-4 px-2">Community edition</span>
-                        <img class="xl-icon mt-3 mb-5" src="assets/community-edition.png">
-                    </div>
-                    <div class="content">
-                        Curate, Share or access high quality datasets hosted by the global open-source community all-in-one place.
-                    </div>
-                </div>
-                <div class="btn">
-                    Early access
-                </div>
-            </div>
-
+          </div>
+          <button class="btn">Early access</button>
         </div>
 
-        <div class="d-flex justify-content-center mb-5">
-            <button class="lg-btn">
-                More usecases
-            </button>
+        <div class="card-lg">
+          <div>
+            <div class="header">
+              <span class="text-white fs-26 mt-5 mb-4 px-2"
+                >Enterprise edition</span
+              >
+              <img
+                class="xl-icon mt-3 mb-5"
+                src="assets/enterprise-edition.png"
+              />
+            </div>
+            <div class="content">
+              Create sample stores and central data repositories to help
+              everyone find and access the data they need. Use all of your
+              organization’s data without having to worry about data quality,
+              compliance, or data governance ever again.
+            </div>
+          </div>
+          <div class="btn">Early access</div>
         </div>
 
+        <div class="card-lg">
+          <div>
+            <div class="header">
+              <span class="text-white fs-26 mt-5 mb-4 px-2"
+                >Community edition</span
+              >
+              <img
+                class="xl-icon mt-3 mb-5"
+                src="assets/community-edition.png"
+              />
+            </div>
+            <div class="content">
+              Curate, Share or access high quality datasets hosted by the global
+              open-source community all-in-one place.
+            </div>
+          </div>
+          <div class="btn">Early access</div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-5">
+        <button class="lg-btn">More usecases</button>
+      </div>
     </div>
 
     <div class="bg-black text-white py-3">
-        <div class="mx-5 pb-5 mb-5">
-            <div class="d-flex flex-column align-items-center mt-5">
-                <p class="fs-60 ff-poppins-bold fw-bold text-center">
-                    Reserve <span class="gradient-text">your username</span> before it’s <br> gone to claim your early access
-                </p>
-                <p class="ff-poppins mt-4 mb-5 text-center text-gray-1">
-                    Then bring your whole team on us for the first year as our early Datasetters.
-                </p>
-                <div class="d-flex w-40 align-items-center flex-sm-wrap flex-xs-wrap flex-md-nowrap justify-content-center">
-                    <div class="d-flex flex-nowrap input-group mt-3 me-3">
-                        <span class="input-group-text border-0 bg-black ff-poppins text-white"
-                            id="datasetat">dataset.at/</span>
-                        <input type="text" class="form-control border-0 input-box bg-black text-white" id="username2"
-                            aria-describedby="datasetat">
-                    </div>
-                    <button type="button" class="mt-3 btn btn-primary main-btn ff-poppins flex-grow-1 footer-claim-button">Claim</button>
-                </div>
+      <div class="mx-5 pb-5 mb-5">
+        <div class="d-flex flex-column align-items-center mt-5">
+          <p class="fs-60 ff-poppins-bold fw-bold text-center">
+            Reserve <span class="gradient-text">your username</span> before it’s
+            <br />
+            gone to claim your early access
+          </p>
+          <p class="ff-poppins mt-4 mb-5 text-center text-gray-1">
+            Then bring your whole team on us for the first year as our early
+            Datasetters.
+          </p>
+          <div
+            class="d-flex w-40 align-items-center flex-sm-wrap flex-xs-wrap flex-md-nowrap justify-content-center"
+          >
+            <div class="d-flex flex-nowrap input-group mt-3 me-3">
+              <span
+                class="input-group-text border-0 bg-black ff-poppins text-white"
+                id="datasetat"
+                >dataset.at/</span
+              >
+              <input
+                type="text"
+                class="form-control border-0 input-box bg-black text-white"
+                id="username2"
+                aria-describedby="datasetat"
+              />
             </div>
+            <button
+              type="button"
+              class="mt-3 btn btn-primary main-btn ff-poppins flex-grow-1 footer-claim-button"
+            >
+              Claim
+            </button>
+          </div>
         </div>
-        <div class="mb-4 d-flex flex-column justify-content-center align-items-center">
-            <img src="assets/profile-page.png" class="img-1">
-            <div class="grad-img"></div>
-        </div>
+      </div>
+      <div
+        class="mb-4 d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="assets/profile-page.png" class="img-1" />
+        <div class="grad-img"></div>
+      </div>
 
-        <div class="footer">
-            <div class="hr-line"></div>
-            <div class="d-flex justify-content-md-between align-items-center justify-content-center flex-wrap">
-                <div class="ff-poppins my-4 mr-3">All rights reserved © 2021</div>
-                <div class="d-flex justify-content-center align-items-center my-4 mx-5 flex-wrap">
-                    <img class="twitter-icon cursor-pointer" src="assets/twitter.png">
-                    <img class="facebook-icon cursor-pointer" src="assets/facebook.png">
-                    <img class="linkedin-icon cursor-pointer" src="assets/linkedin.png">
-                </div>
-                <div class="ff-poppins terms-privacy my-4 ml-3">
-                    <span class="cursor-pointer">Terms</span>
-                    <span class="cursor-pointer">Privacy</span>
-                </div>
-            </div>
+      <div class="footer">
+        <div class="hr-line"></div>
+        <div
+          class="d-flex justify-content-md-between align-items-center justify-content-center flex-wrap"
+        >
+          <div class="ff-poppins my-4 mr-3">All rights reserved © 2021</div>
+          <div
+            class="d-flex justify-content-center align-items-center my-4 mx-5 flex-wrap"
+          >
+            <img class="twitter-icon cursor-pointer" src="assets/twitter.png" />
+            <img
+              class="facebook-icon cursor-pointer"
+              src="assets/facebook.png"
+            />
+            <img
+              class="linkedin-icon cursor-pointer"
+              src="assets/linkedin.png"
+            />
+          </div>
+          <div class="ff-poppins terms-privacy my-4 ml-3">
+            <span class="cursor-pointer">Terms</span>
+            <span class="cursor-pointer">Privacy</span>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
